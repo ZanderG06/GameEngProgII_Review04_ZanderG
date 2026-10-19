@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
 
 public enum GameState
 {
@@ -78,6 +77,6 @@ public class GameStateManager : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        if(context.performed) SetState(GameState.Paused);
+        if(context.performed && currentState != GameState.MainMenu) SetState(GameState.Paused);
     }
 }

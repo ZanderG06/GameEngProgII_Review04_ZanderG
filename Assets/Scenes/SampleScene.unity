@@ -2257,7 +2257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 30
   moveEnabled: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1995709428}
 --- !u!212 &1995709428
 SpriteRenderer:
   serializedVersion: 2
